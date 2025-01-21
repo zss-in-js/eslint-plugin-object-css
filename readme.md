@@ -51,3 +51,33 @@ If you want to set security levels individually, set them in the rules.
   }
 }
 ```
+
+## Supports eslint9
+
+### eslint.config.mjs
+
+```mjs
+import { dirname } from 'path'
+import { fileURLToPath } from 'url'
+import { FlatCompat } from '@eslint/eslintrc'
+import objectCss from 'eslint-plugin-object-css'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
+
+const compat = new FlatCompat({
+  baseDirectory: __dirname,
+})
+
+const eslintConfig = [
+  ...compat.extends('plugin:object-css/recommended'),
+  {
+    files: ['**/*.{ts,js,jsx,tsx}'],
+    plugins: {
+      'object-css': objectCss,
+    },
+  },
+]
+
+export default eslintConfig
+```
