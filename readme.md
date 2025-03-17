@@ -1,7 +1,6 @@
 # eslint-plugin-object-css
 
-![NPM Version](https://img.shields.io/npm/v/eslint-plugin-object-css?color=brightgreen)
-![NPM License](https://img.shields.io/npm/l/eslint-plugin-object-css?color=yellow)
+※ This plugin has been migrated into [eslint-plugin-stylefix](https://www.npmjs.com/package/eslint-plugin-stylefix).
 
 ESLint plugin for object CSS properties order and valid value verification.
 
