@@ -1,6 +1,6 @@
 # eslint-plugin-object-css
 
-※ This plugin has been migrated into [eslint-plugin-stylefix](https://www.npmjs.com/package/eslint-plugin-stylefix).
+※ This plugin has been migrated into [eslint-plugin-zss-lint](https://www.npmjs.com/package/eslint-plugin-zss-lint).
 
 ESLint plugin for object CSS properties order and valid value verification.
 
